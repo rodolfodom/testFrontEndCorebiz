@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:wght@400;600;700;900&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Corebiz</title>
 </head>
@@ -79,6 +80,26 @@
             </svg>
         </div>
     </header>
+    <main>
+        <!--Promotional Slider-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-promo-1">
+                    <div class="text">
+                        <p>!Hola¡ ¿Qué es lo que buscas?</p>
+                        <h3>Crear o migrar tu<br>comercio electrónico?</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/promotionalSlider.js" defer type="module"></script>
 </body>
 
 </html>
