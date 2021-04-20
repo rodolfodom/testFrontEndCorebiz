@@ -11,11 +11,13 @@
   --color-grey-6: #585858;
   --color-grey-7: #333333;
   --swiper-theme-color: #f8475f;
+  --font-nunito: 'Nunito', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--font-nunito);
 }
 
 header {
@@ -60,7 +62,6 @@ header {
   text-align: center;
   color: white;
   font-size: 10px;
-  font-family: "Nunito", sans-serif;
   font-weight: 600;
 }
 
@@ -82,15 +83,6 @@ header {
 }
 
 /* ********* Promotional slider    ******************** */
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
 .swiper-container {
   width: 100%;
@@ -138,7 +130,6 @@ body {
 .slide-promo-1 .text p{
   margin: 0;
   color: var(--color-white);
-  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -146,7 +137,21 @@ body {
 .slide-promo-1 .text h3 {
   margin: 0;
   color: var(--color-white);
-  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 2rem;
+}
+
+/************* products section ************** */
+
+.products h2{
+  font-size: 1.125rem;
+  margin-left: 3rem;
+  font-weight: 900;
+}
+
+.bar {
+  margin: -0.125rem 0 0 3rem;
+  height: 4px;
+  width: 3rem;
+  background-color: var(--color-grey-2);
 }
