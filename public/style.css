@@ -84,7 +84,7 @@ header {
 
 /* ********* Promotional slider    ******************** */
 
-.swiper-container {
+.swiper-container{
   width: 100%;
   height: 255px;
 }
@@ -142,6 +142,11 @@ header {
 }
 
 /************* products section ************** */
+
+.swiper-container-products{
+  width: 100%;
+  height: 355px;
+}
 
 .products h2{
   font-size: 1.125rem;

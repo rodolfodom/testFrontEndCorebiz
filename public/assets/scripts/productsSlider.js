@@ -1,8 +1,25 @@
-const productsSlider = new Swiper(".slider-products-container", {
-    spaceBetween: 48,
-    slidesPerView: 2,
-    pagination: {
-        el: '.slider-products-container .swiper-pagination',
-        type: 'bullets'
-    }
-})
+
+export default function productsSlider() {
+
+    const d = document,
+    container = d.getElementById("products-container"),
+    pagination = d.getElementById("products-pagination");
+    
+    const swiper = new Swiper(container, {
+        slidesPerView: 2,
+        pagination: {
+            el: pagination,
+            type: 'bullets'
+        }
+    });
+    
+}
+
+
+
+
+
+
+
+
+
