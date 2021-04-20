@@ -1,0 +1,22 @@
+{
+  "name": "testfrontendcorebiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodolfodom/testFrontEndCorebiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodolfodom/testFrontEndCorebiz/issues"
+  },
+  "homepage": "https://github.com/rodolfodom/testFrontEndCorebiz#readme",
+  "dependencies": {
+    "swiper": "^6.5.7"
+  }
+}
