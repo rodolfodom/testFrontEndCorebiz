@@ -7,6 +7,7 @@ export default function productsSlider() {
     
     const swiper = new Swiper(container, {
         slidesPerView: 2,
+        spaceBetween: 47,
         pagination: {
             el: pagination,
             type: 'bullets'

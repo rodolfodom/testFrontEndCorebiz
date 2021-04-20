@@ -12,6 +12,7 @@
   --color-grey-7: #333333;
   --swiper-theme-color: #f8475f;
   --font-nunito: 'Nunito', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -143,7 +144,11 @@ header {
 
 /************* products section ************** */
 
-.swiper-container-products{
+.products {
+  background-color: var(--color-white);
+}
+
+.products .swiper-container{
   width: 100%;
   height: 355px;
 }
@@ -155,8 +160,64 @@ header {
 }
 
 .bar {
-  margin: -0.125rem 0 0 3rem;
+  margin: -0.15rem 0 0.5rem 3rem;
   height: 4px;
   width: 3rem;
   background-color: var(--color-grey-2);
 }
+
+
+/* **************** product slide content **************** */
+.swiper-slide .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-grey-5);
+  font-size: 0.9rem;
+  justify-content: space-around;
+}
+
+.product-img {
+  width: 160px;
+  height: 150px;
+}
+
+.product-img img {
+  height: 100%;
+  width: 100%;
+}
+.swiper-slide .content .last-price{
+  text-decoration: line-through;
+} 
+
+.swiper-slide .content .actual-price{
+  color: var(--color-black);
+  font-size: 1.3rem;
+}
+
+.swiper-slide .content .score{
+  color: var(--color-highlight);
+}
+
+.swiper-slide .content button {
+  align-self: stretch;
+  margin: 0 1rem;
+  border-radius: 5.57px;
+  padding: 0.6rem 2rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-ubuntu);
+  font-weight: 900;
+  border: none;
+}
+
+
+.swiper-slide .content > * {
+  margin-top: 0.025rem;
+  margin-bottom: 0.025rem;
+}
+
+
+
