@@ -13,6 +13,7 @@
   --swiper-theme-color: #f8475f;
   --font-nunito: 'Nunito', sans-serif;
   --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-lato: 'Lato', sans-serif;
 }
 
 body {
@@ -213,11 +214,49 @@ header {
   border: none;
 }
 
-
 .swiper-slide .content > * {
   margin-top: 0.025rem;
   margin-bottom: 0.025rem;
 }
+
+/* *********** newsletter section ***************** */
+
+.newletter-section {
+  background-color: var(--color-grey-1);
+  padding: 1rem;
+  font-family: var(--font-lato);
+  font-weight: 700;
+}
+
+.newletter-section h3 {
+  font-size: 1.68rem;
+  margin: 0;
+}
+
+.newletter-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.newletter-section input {
+  height: 3.25rem;
+  font-size: 1rem;
+  margin: 0.56rem 0;
+  border: none;
+}
+
+.newletter-section input::placeholder {
+  color: var(--color-grey-6);
+}
+
+.newletter-section input[type="submit"]{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 6px;
+  outline: none;
+}
+
 
 
 
