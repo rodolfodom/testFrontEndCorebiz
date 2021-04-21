@@ -149,11 +149,6 @@ header {
   background-color: var(--color-white);
 }
 
-.products .swiper-container{
-  width: 100%;
-  height: 355px;
-}
-
 .products h2{
   font-size: 1.125rem;
   margin-left: 3rem;
@@ -166,9 +161,15 @@ header {
   width: 3rem;
   background-color: var(--color-grey-2);
 }
+.products .swiper-container{
+  width: 100%;
+  height: 420px;
+}
+
 
 
 /* **************** product slide content **************** */
+
 .swiper-slide .content {
   height: 100%;
   width: 100%;
@@ -177,7 +178,7 @@ header {
   align-items: center;
   color: var(--color-grey-5);
   font-size: 0.9rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .product-img {
@@ -202,6 +203,9 @@ header {
   color: var(--color-highlight);
 }
 
+.swiper-slide .content > * {
+  margin: 0.25rem 0;
+}
 .swiper-slide .content button {
   align-self: stretch;
   margin: 0 1rem;
@@ -212,12 +216,10 @@ header {
   font-family: var(--font-ubuntu);
   font-weight: 900;
   border: none;
+  margin-bottom: 3rem;
 }
 
-.swiper-slide .content > * {
-  margin-top: 0.025rem;
-  margin-bottom: 0.025rem;
-}
+
 
 /* *********** newsletter section ***************** */
 
