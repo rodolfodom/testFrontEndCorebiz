@@ -22,23 +22,38 @@ body {
   font-family: var(--font-nunito);
 }
 
+/* ************ header ******************* */
+
 header {
+  box-sizing: border-box;
   background-color: var(--color-white);
   height: 115px;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+
 .actions {
   display: flex;
   justify-content: space-between;
-  height: 30%;
+  height: 40%;
   align-items: baseline;
 }
 
-.logo {
+.mi-cuenta-button {
+  display: none;
+  background-color: var(--color-white);
+  border: none;
+  color: var(--color-grey-5);
+}
+
+.mi-cuenta-button i {
+  margin-right: 0.2rem;
+}
+
+.logo-header {
   height: 100%;
   width: auto;
 }
@@ -83,6 +98,50 @@ header {
 .search input::placeholder {
   color: var(--color-grey-5);
 }
+
+@media screen and (min-width: 1050px) {
+  header {
+    height: 80px;
+    padding: 16px 20px 32px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .actions {
+    flex-grow: 1;
+    max-width: 1200px;
+    height: 33px;
+    align-items: baseline;
+  }
+
+  .user-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .mi-cuenta-button {
+    display: block;
+    justify-self: flex-end;
+    margin-right: 1rem;
+  }
+  
+  .search {
+    box-sizing: border-box;
+    position: absolute;
+    width: 45%;
+    max-width: 600px;
+    height: 33px;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+}
+
+
 
 /* ********* Promotional slider    ******************** */
 
