@@ -99,6 +99,9 @@ header {
   color: var(--color-grey-5);
 }
 
+
+/* header media queries */
+
 @media screen and (min-width: 1050px) {
   header {
     height: 80px;
@@ -200,6 +203,62 @@ header {
   color: var(--color-white);
   font-weight: 700;
   font-size: 2rem;
+}
+
+.slide-promo-1 .text svg {
+  display: none;
+}
+
+/* promotional slider media queries */
+
+@media screen and (min-width: 1050px) {
+  .swiper-container {
+    height: 430px;
+  }
+
+
+  .slide-promo-1 {
+  background-image: url("./assets/img/banner.jpg");
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  }
+
+  .slide-promo-1 .text {
+    background-color: #00000000;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+  }
+
+  .slide-promo-1 .text svg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 5;
+  }
+
+  .slide-promo-1 .text h3 {
+    z-index: 6;
+    font-size: 3vw;
+  }
+
+
+  .slide-promo-1 .text p{
+    z-index: 6;
+    font-size: 2vw;
+  }
+  
+
+  
 }
 
 /************* products section ************** */
