@@ -104,64 +104,6 @@
             <!--Products Slider-->
             <div class="swiper-container" id="products-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="content">
-                            <div class="product-img">
-                                <img src="./assets/img/image 3-2.png" alt="">
-                            </div>
-                            <p>Zapato flotador negro</p>
-                            <div class="score">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <p class="last-price">de $ 399.00</p>
-                            <p class="actual-price">por $259.90</p>
-                            <p>ou em 9x R$ 28,87</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="content">
-                            <div class="product-img">
-                                <img src="./assets/img/image 3-1.png" alt="">
-                            </div>
-                            <p>Zapato flotador negro</p>
-                            <div class="score">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <p class="last-price">de $ 399.00</p>
-                            <p class="actual-price">por $259.90</p>
-                            <p>ou em 9x R$ 28,87</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="content">
-                            <div class="product-img">
-                                <img src="./assets/img/image 3.png" alt="">
-                            </div>
-                            <p>Zapato flotador negro</p>
-                            <div class="score">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <p class="last-price">de $ 399.00</p>
-                            <p class="actual-price">por $259.90</p>
-                            <p>ou em 9x R$ 28,87</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">Slide 4</div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination" id="products-pagination"></div>
@@ -203,18 +145,23 @@
             </div>
         </div>
     </footer>
-    <template id="productCard">
-        <div class="content">
-            <div class="product-img">
-                <img src="" alt="">
+
+    <!--Product slide tempalte-->
+
+    <template id="product-card">
+        <div class="swiper-slide">
+            <div class="content">
+                <div class="product-img">
+                    <img src="" alt="">
+                </div>
+                <p id="productName"></p>
+                <div class="score">
+                </div>
+                <p class="last-price"></p>
+                <p class="actual-price"></p>
+                <p class="installments"></p>
+                <button>COMPRAR</button>
             </div>
-            <p id="productName"></p>
-            <div class="score">
-            </div>
-            <p class="last-price"></p>
-            <p class="actual-price"></p>
-            <p></p>
-            <button>COMPRAR</button>
         </div>
     </template>
     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
