@@ -1,5 +1,10 @@
 # testFrontEndCorebiz
 
+## Tecnologias
+* HTML
+* CSS
+* JavaScript Vanilla
+
 ## Dependencias
 
 * swiperJS
