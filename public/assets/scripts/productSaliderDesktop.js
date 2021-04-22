@@ -2,16 +2,17 @@ export default function productsSliderDesktop() {
 
     const d = document,
     container = d.getElementById("products-container"),
-    pagination = d.getElementById("products-pagination");
+    nextBtn = d.getElementById("products-next-btn"),
+    prevBtn = d.getElementById("products-prev-btn");
     
     const swiper = new Swiper(container, {
         slidesPerView: 4,
-        spaceBetween: 40,
+        spaceBetween: 30,
         observer: true, 
         observeParents: true,
-        pagination: {
-            el: pagination,
-            type: 'bullets'
+        navigation: {
+            nextEl: nextBtn,
+            prevEl: prevBtn,
         }
     });
     

@@ -4,15 +4,18 @@ import productSlides from "./assets/scripts/productSlideGenerator.js"
 import sendData from "./assets/scripts/newsLetter.js";
 import addItem from "./assets/scripts/addItem.js";
 import initCounter from "./assets/scripts/initCounter.js";
+import productsSliderDesktop from "./assets/scripts/productSaliderDesktop.js";
+import reloadSlider from "./assets/scripts/reloadProductsSlider.js";
 
 const d = document,
 newsletterForm = d.getElementById("newsletter-form"); 
 
 d.addEventListener("DOMContentLoaded", async ()=>{
     promosSlider();
-    productsSlider();
     addItem();
     initCounter();
+    (innerWidth < 1050) ? productsSlider() : productsSliderDesktop();
+    reloadSlider();
     await productSlides()
 });
 

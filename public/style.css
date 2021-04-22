@@ -286,6 +286,12 @@ header {
   height: 420px;
 }
 
+.products .swiper-button-next,
+.products .swiper-button-prev {
+  display: none;
+}
+
+
 
 /* Products section media queries */
 
@@ -301,9 +307,25 @@ header {
   }
 
   .bar {
-  width: 4rem;
-}
+    width: 4rem;
+  }
 
+  .products .swiper-button-next,
+  .products .swiper-button-prev {
+    display: block;
+  }
+
+  
+
+  .swiper-button-next:after, 
+  .swiper-button-prev:after {
+
+    color: var(--color-black);
+  } 
+
+  .products .swiper-pagination {
+    display: none;
+  }
 }
 
 /* **************** product slide content **************** */
