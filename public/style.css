@@ -366,6 +366,7 @@ header {
 .swiper-slide .content > * {
   margin: 0.25rem 0;
 }
+
 .swiper-slide .content button {
   align-self: stretch;
   margin: 0 1rem;
@@ -377,6 +378,12 @@ header {
   font-weight: 900;
   border: none;
   margin-bottom: 3rem;
+}
+
+/* product slide content media queries */
+
+.swiper-slide .content button {
+  align-self: center;
 }
 
 
