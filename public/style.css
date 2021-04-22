@@ -426,6 +426,38 @@ header {
   outline: none;
 }
 
+/* newsletter section media queries */
+@media screen and (min-width: 1050px) {
+ 
+  .newletter-section h3 {
+  margin: auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.newletter-section form {
+  flex-direction: row;
+  max-width: 720px;
+  justify-content: center;
+  margin: auto;
+}
+
+.newletter-section input[type="submit"] {
+  border-radius: 0;
+  flex-grow: 1;
+  margin: 1rem 0.25rem;
+}
+
+.newletter-section input[type="text"],
+.newletter-section input[type="email"]{
+  flex-grow: 2;
+  margin: 1rem 0.25rem;
+}
+
+}
+
+
+
 /* ************* footer ***************** */
 
 footer {
@@ -436,7 +468,16 @@ footer {
   flex-direction: column;
 }
 
-footer > * {
+footer > div {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > div > * {
   margin: 1rem 0;
 }
 
@@ -448,6 +489,7 @@ footer .bar {
 footer address {
   line-height: 2.5rem;
   font-style: normal;
+  margin-top: 1rem;
 }
 
 footer .buttons {
@@ -480,7 +522,8 @@ footer button img {
 footer .credits {
   display: flex;
   justify-content: space-between;
-  padding: 0 4rem;
+  align-self: stretch;
+  padding: 0 2rem;
 }
 
 footer .legend {
@@ -488,14 +531,39 @@ footer .legend {
   margin-bottom: 0.5rem;
 }
 
-.vtex-logo *{
-  transform: scale(1.2);
+.vtex-logo * {
+  transform: scale(1.1);
+  margin-right: -0.2rem;
 }
 
 .corebiz-logo {
-  transform: scale(1.2);
+  transform: scale(1.1);
   margin-left: 0.4rem;
 }
+
+
+/* footer media queries */
+
+@media screen and (min-width: 1050px){
+  
+  footer > div {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .credits {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.credits > * {
+  padding: 0 1rem;
+}
+
+}
+
+
 
 
 
